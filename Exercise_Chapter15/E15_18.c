@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void func(int count, ...);  // count = number of variable arguments
+void func(int count, ...); // count = number of variable arguments
 
 int main(void)
 {
-    func(4, 2, 3, 8, 5);   // 4 values: 2, 3, 8, 5
+    func(4, 2, 3, 8, 5); // 4 values: 2, 3, 8, 5
     return 0;
 }
 

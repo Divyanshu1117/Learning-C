@@ -11,7 +11,7 @@ int main(void)
         case 5:
         case 10:
             k++;
-            continue;  // This continues the while loop
+            continue; // This continues the while loop
         case 15:
         case 20:
             k--;

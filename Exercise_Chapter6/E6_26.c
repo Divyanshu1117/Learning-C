@@ -12,7 +12,7 @@ int main(void)
 
 void func(int a)
 {
-    static int b = 2;  // static variable, initialized only once
+    static int b = 2; // static variable, initialized only once
     a++;
     b++;
     printf("%d %d\n", a, b);

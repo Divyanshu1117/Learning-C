@@ -15,7 +15,7 @@ int main(void)
 
 void func(int a[], const int b[], int c[])
 {
-    a[0]++;      // Modifies a[0]
+    a[0]++; // Modifies a[0]
     // b[0]++;   // ❌ Cannot modify because b is const
-    c[0] += 5;   // Modify c[0]
+    c[0] += 5; // Modify c[0]
 }

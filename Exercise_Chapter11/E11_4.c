@@ -1,7 +1,7 @@
 /*E11_4*/
 #include <stdio.h>
 
-struct tag   // Global struct definition
+struct tag // Global struct definition
 {
     int i;
     char c;

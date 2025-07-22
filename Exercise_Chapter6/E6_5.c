@@ -1,7 +1,7 @@
 /*E6.5*/
 #include <stdio.h>
 
-int func(int a, int b, int c);  // Function prototype
+int func(int a, int b, int c); // Function prototype
 
 int main(void)
 {

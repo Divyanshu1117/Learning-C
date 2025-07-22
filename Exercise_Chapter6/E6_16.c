@@ -1,7 +1,7 @@
 /*E6.16*/
 #include <stdio.h>
 
-int func(int a, int b);  // Function prototype
+int func(int a, int b); // Function prototype
 
 int main(void)
 {

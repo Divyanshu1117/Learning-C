@@ -21,7 +21,7 @@ int main(void)
     stu *p = malloc(sizeof(stu));
     node *ptr = malloc(sizeof(node));
 
-    if (p == NULL || ptr == NULL)  // Always check malloc
+    if (p == NULL || ptr == NULL) // Always check malloc
     {
         printf("Memory allocation failed\n");
         return 1;
