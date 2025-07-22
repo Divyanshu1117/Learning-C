@@ -1,18 +1,18 @@
 /*PYRAMIDS*/
 
-#include<stdio.h>
+#include <stdio.h>
 
 /*Pyramid (a)*/
 int main(void)
 {
-    int i,j,n;
+	int i, j, n;
 	printf("Enter number of lines : ");
-	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++)
 	{
-		for(j=1; j<=i; j++)
-			printf("* ");	
-		printf("\n");	
+		for (j = 1; j <= i; j++)
+			printf("* ");
+		printf("\n");
 	}
 	return 0;
 }
@@ -21,14 +21,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%2d",i);	
-		printf("\n");	
+			printf("%2d",i);
+		printf("\n");
 	}
 	return 0;
 }
@@ -38,14 +38,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%2d",j);	
-		printf("\n");	
+			printf("%2d",j);
+		printf("\n");
 	}
 	return 0;
 }
@@ -55,14 +55,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%3d",i+j);	
-		printf("\n");	
+			printf("%3d",i+j);
+		printf("\n");
 	}
 	return 0;
 }
@@ -72,14 +72,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%d ",(i+j)%2==0 ? 1 : 0);	
-		printf("\n");	
+			printf("%d ",(i+j)%2==0 ? 1 : 0);
+		printf("\n");
 	}
 	return 0;
 }
@@ -89,14 +89,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n,p=1;
+	int i,j,n,p=1;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%3d",p++);	
-		printf("\n");	
+			printf("%3d",p++);
+		printf("\n");
 	}
 	return 0;
 }
@@ -106,14 +106,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%2d",n+1-j);	
-		printf("\n");	
+			printf("%2d",n+1-j);
+		printf("\n");
 	}
 	return 0;
 }
@@ -123,14 +123,14 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
 		for(j=1; j<=i; j++)
-			printf("%2d",n+1-i);	
-		printf("\n");	
+			printf("%2d",n+1-i);
+		printf("\n");
 	}
 	return 0;
 }
@@ -140,7 +140,7 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
 	for(i=1; i<=n; i++)
@@ -157,7 +157,7 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
 	for(i=1; i<=n; i++)
@@ -174,7 +174,7 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
 	for(i=1; i<=n; i++)
@@ -191,7 +191,7 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
 	for(i=1; i<=n; i++)
@@ -208,7 +208,7 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
 	for(i=1; i<=n; i++)
@@ -225,16 +225,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
-		for( j=1; j<=n-i; j++)		
+		for( j=1; j<=n-i; j++)
 			printf(" ");
 		for(j=1; j<=i; j++)
-			printf("* ");	
-		printf("\n");	
+			printf("* ");
+		printf("\n");
 	}
 	return 0;
 }
@@ -244,16 +244,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)		
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		for(j=1; j<=i; j++)
-			printf("%2d",j);	
-		printf("\n");	
+			printf("%2d",j);
+		printf("\n");
 	}
 	return 0;
 }
@@ -263,16 +263,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
-		for( j=1; j<=n-i; j++)		
+		for( j=1; j<=n-i; j++)
 			printf(" ");
 		for(j=1; j<=i; j++)
-			printf("*");	
-		printf("\n");	
+			printf("*");
+		printf("\n");
 	}
 	return 0;
 }
@@ -282,16 +282,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)  
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)		
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		for(j=1; j<=i; j++)
-			printf("%d",j);	
-		printf("\n");	
+			printf("%d",j);
+		printf("\n");
 	}
 	return 0;
 }
@@ -301,16 +301,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("*");
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -320,36 +320,35 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("%d",i);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
 */
 
-
 /*Pyramid (t)*/
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("%d",j);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -359,16 +358,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=2*(n-i); j++)	
+		for(j=1; j<=2*(n-i); j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("* ");
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -378,44 +377,43 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)		
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		p=i;
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf("%d",p++);
 		p=p-2;
-		for(j=1; j<=i-1; j++)	
+		for(j=1; j<=i-1; j++)
 			printf("%d",p--);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
 */
 
-
 /*Pyramid (w)*/
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)		
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		p=n;
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf("%d",p--);
 		p=p+2;
-		for(j=1; j<=i-1; j++)	
+		for(j=1; j<=i-1; j++)
 			printf("%d",p++);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -425,16 +423,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("*");
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -444,16 +442,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("%d",n+1-i);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -463,16 +461,16 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("%d",j);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -482,74 +480,72 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
 		p=n+1-i;
-		for(j=1; j<=n-i+1; j++)	
+		for(j=1; j<=n-i+1; j++)
 			printf("%d",p++);
 		p=p-2;
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf("%d",p--);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
 */
-
 
 /*Pyramid (z2)*/
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter number of lines : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
 		p=n;
-		for(j=1; j<=n-i+1; j++)	
+		for(j=1; j<=n-i+1; j++)
 			printf("%d",p--);
 		p=p+2;
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf("%d",p++);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
 */
 
-
 /*Pyramid (z3)*/
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter n : ");
 	scanf("%d",&n);
 
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("*");
-		printf("\n");		
+		printf("\n");
 	}
 	n--;
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("*");
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -559,54 +555,53 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter n : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("%d",i);
-		printf("\n");		
+		printf("\n");
 	}
 	n--;
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("%d",n+1-i);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
 */
 
-
 /*Pyramid (z5)*/
 /*
 int main(void)
 {
-    int i,j,n;
+	int i,j,n;
 	printf("Enter n : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	  
+		for(j=1; j<=n-i; j++)
 			printf(" ");
-		for(j=1; j<=2*i-1; j++)	
+		for(j=1; j<=2*i-1; j++)
 			printf("%d",j);
-		printf("\n");		
+		printf("\n");
 	}
 	n--;
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
-		for(j=1; j<=2*(n-i)+1; j++)	
+		for(j=1; j<=2*(n-i)+1; j++)
 			printf("%d",j);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -616,33 +611,33 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter n : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)		
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		p=i;
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf("%d",p++);
 		p=p-2;
-		for(j=1; j<=i-1; j++)	
+		for(j=1; j<=i-1; j++)
 			printf("%d",p--);
-		printf("\n");		
+		printf("\n");
 	}
 	n--;
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
 		p=n+1-i;
-		for(j=1; j<=n-i+1; j++)	
+		for(j=1; j<=n-i+1; j++)
 			printf("%d",p++);
 		p=p-2;
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf("%d",p--);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
 }
@@ -652,34 +647,33 @@ int main(void)
 /*
 int main(void)
 {
-    int i,j,n,p;
+	int i,j,n,p;
 	printf("Enter n : ");
 	scanf("%d",&n);
-	for(i=1; i<=n; i++)		
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf(" ");
 		p=n;
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf("%d",p--);
 		p=p+2;
-		for(j=1; j<=i-1; j++)	
+		for(j=1; j<=i-1; j++)
 			printf("%d",p++);
-		printf("\n");		
+		printf("\n");
 	}
 	n--;
-	for(i=1; i<=n; i++)	 
+	for(i=1; i<=n; i++)
 	{
-		for(j=1; j<=i; j++)	
+		for(j=1; j<=i; j++)
 			printf(" ");
 		p=n;
-		for(j=1; j<=n-i+1; j++)	
+		for(j=1; j<=n-i+1; j++)
 			printf("%d",p--);
 		p=p+2;
-		for(j=1; j<=n-i; j++)	
+		for(j=1; j<=n-i; j++)
 			printf("%d",p++);
-		printf("\n");		
+		printf("\n");
 	}
 	return 0;
-}
-*/
+}*/

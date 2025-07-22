@@ -1,14 +1,17 @@
 /*E15.3*/
-#include<stdio.h>
+#include <stdio.h>
+
 struct tag
 {
-	auto int x;
-	static int y;
+    int x;
+    int y;
 };
+
 int main(void)
 {
-	struct tag s;
-	s.x=4;
-	s.y=5;
-	return 0;
+    struct tag s;
+    s.x = 4;
+    s.y = 5;
+    printf("%d %d\n", s.x, s.y);
+    return 0;
 }

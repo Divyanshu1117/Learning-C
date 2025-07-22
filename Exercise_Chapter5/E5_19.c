@@ -1,34 +1,34 @@
 /*E5_19*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int x=30,y=5,z=10;
-	switch(x)
+	int x = 30, y = 5, z = 10;
+	switch (x)
 	{
-		case 10:
-			z++;	
+	case 10:
+		z++;
+		break;
+	case 20:
+		z--;
+		break;
+	case 30:
+		switch (y)
+		{
+		case 2:
+			z = z + 3;
 			break;
-		case 20:
-			z--;
-			break;
-       	case 30:
-			switch(y)
-			{
-				case 2:
-					z=z+3;
-					break;
-				case 4: 
-				case 5: 
-					z=z+10;
-					break;
-				default:
-					z=z-2;
-			}
+		case 4:
+		case 5:
+			z = z + 10;
 			break;
 		default:
-			z=0;
+			z = z - 2;
+		}
+		break;
+	default:
+		z = 0;
 	}
-	printf("%d\n",z);
+	printf("%d\n", z);
 	return 0;
 }
 /*
@@ -52,5 +52,4 @@ int main(void)
 		z=0;
 	printf("%d\n",z);
 	return 0;
-}
-*/
+}*/

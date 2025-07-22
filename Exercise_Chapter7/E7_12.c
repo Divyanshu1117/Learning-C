@@ -1,5 +1,5 @@
 /*E7_12*/
-#include<stdio.h>
+#include <stdio.h>
 void func1(int n);
 void func2(int n);
 int main(void)
@@ -13,21 +13,21 @@ int main(void)
 void func1(int n)
 {
 	int i;
-	if(n==0)
+	if (n == 0)
 		return;
-    for(i=1; i<=n; i++)
+	for (i = 1; i <= n; i++)
 		printf("*");
-    printf("\n");	
-	func1(n-1);
+	printf("\n");
+	func1(n - 1);
 }
 
 void func2(int n)
 {
 	int i;
-	if(n==0)
+	if (n == 0)
 		return;
-    func2(n-1);
-	for(i=1; i<=n; i++)
+	func2(n - 1);
+	for (i = 1; i <= n; i++)
 		printf("*");
-    printf("\n");	
+	printf("\n");
 }

@@ -1,8 +1,8 @@
 /*P11.5 Program to understand pointers to structures*/
-#include<stdio.h>
+#include <stdio.h>
 struct student
 {
-    char name[20];
+	char name[20];
 	int rollno;
 	int marks;
 };

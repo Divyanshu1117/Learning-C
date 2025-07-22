@@ -1,23 +1,23 @@
 /*E5_45*/
-#include<stdio.h>
+#include <stdio.h>
 
 /*(i)*/
 
 int main(void)
 {
-	int i,j,k;
-    for(i=1; i<8; i++)
-    {
-        if(i!=3 && i!=5)
-        {
-			for(j=1;j<=i;j++)
+	int i, j, k;
+	for (i = 1; i < 8; i++)
+	{
+		if (i != 3 && i != 5)
+		{
+			for (j = 1; j <= i; j++)
 			{
-				for(k=j; k>0; k--)
-					printf("%d ",k);
+				for (k = j; k > 0; k--)
+					printf("%d ", k);
 				printf("\n");
 			}
 			printf("\n");
-		} 
+		}
 	}
 	return 0;
 }
@@ -34,7 +34,7 @@ int main(void)
 		for(j=1;j<=i;j++)
 		{
 			for(k=j; k>0; k--)
-	   			printf("%d ",k);
+				printf("%d ",k);
 			printf("\n");
 		}
 		printf("\n");
@@ -43,14 +43,13 @@ int main(void)
 }
 */
 
-
 /*(ii)*/
 /*
 int main(void)
 {
 	int i,j,x;
 	for(i=1; i<10; i++)
-    {
+	{
 		x=i+5;
 		if(i%2==0)
 		{
@@ -64,10 +63,10 @@ int main(void)
 				printf("%d ",x);
 			}
 			printf("\n");
-       }
-       else
+	   }
+	   else
 			printf("%d\n",x);
-     }
+	 }
 	 return 0;
 }
 */
@@ -77,7 +76,7 @@ int main(void)
 {
 	int i,j,x;
 	for(i=1; i<10; i++)
-    { 
+	{
 		x=i+5;
 		if(i%2!=0)
 		{
@@ -93,8 +92,7 @@ int main(void)
 				x--;
 			printf("%d ",x);
 		}
-        printf("\n");
-     }
+		printf("\n");
+	 }
 	 return 0;
-}
-*/
+}*/

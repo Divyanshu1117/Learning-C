@@ -1,6 +1,6 @@
 /*E10.31*/
-#include<stdio.h>
-#include<ctype.h>
+#include <stdio.h>
+#include <ctype.h>
 char *str_upper(char *str);
 int main(void)
 {
@@ -12,10 +12,10 @@ int main(void)
 }
 char *str_upper(char *str)
 {
-	char *s=str;
-	while(*s!='\0')
+	char *s = str;
+	while (*s != '\0')
 	{
-		*s=toupper(*s);
+		*s = toupper(*s);
 		s++;
 	}
 	return str;

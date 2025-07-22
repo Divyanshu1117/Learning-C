@@ -1,13 +1,17 @@
 /*E6.16*/
-#include<stdio.h>
-main()
+#include <stdio.h>
+
+int func(int a, int b); // Function prototype
+
+int main(void)
 {
-	int func(int a,int b)
-	{
-		return (a+b);
-	}
-	int c;
-	c=func(3,5);
-	printf("%d",c);
-	return 0;
+    int c;
+    c = func(3, 5);
+    printf("%d", c);
+    return 0;
+}
+
+int func(int a, int b)
+{
+    return (a + b);
 }

@@ -1,16 +1,16 @@
 /*E5_11*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int x=2,y=0;
+	int x = 2, y = 0;
 
-	if(x==0)
-	    y++;
-	if(x>0)
-	    y--;
-	if(x<0)
-	    y+=2;
-	printf("%d %d\n",x,y);
+	if (x == 0)
+		y++;
+	if (x > 0)
+		y--;
+	if (x < 0)
+		y += 2;
+	printf("%d %d\n", x, y);
 	return 0;
 }
 
@@ -21,12 +21,11 @@ int main(void)
 	int x=2,y=0;
 
 	if(x==0)
-	    y++;
+		y++;
 	else if(x>0)
-	    y--;
+		y--;
 	else
 		y+=2;
 	printf("%d %d\n",x,y);
 	return 0;
-}
-*/
+}*/

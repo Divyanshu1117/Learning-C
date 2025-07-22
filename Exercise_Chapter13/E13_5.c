@@ -1,7 +1,12 @@
 /*E13_5*/
-#include<stdio.h>
-#define NEW_LINE  printf("\n");
-#define BLANK_LINES(n) { int i; for(i=0; i<n; i++) printf("\n"); }
+#include <stdio.h>
+#define NEW_LINE printf("\n");
+#define BLANK_LINES(n)          \
+	{                           \
+		int i;                  \
+		for (i = 0; i < n; i++) \
+			printf("\n");       \
+	}
 int main(void)
 {
 	printf("When you have a chance");

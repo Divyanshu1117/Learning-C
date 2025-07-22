@@ -1,27 +1,29 @@
 /*P5.43 Program to find the LCM and HCF of two numbers*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int x,y,a,b;
+	int x, y, a, b;
 	printf("Enter two numbers : ");
-	scanf("%d%d",&x,&y);
-	a=x; b=y;
-	while(a!=b)
+	scanf("%d%d", &x, &y);
+	a = x;
+	b = y;
+	while (a != b)
 	{
-		if(a<b)
-			a=a+x;
+		if (a < b)
+			a = a + x;
 		else
-			b=b+y;
+			b = b + y;
 	}
-	printf("LCM of %d and %d is %d\n",x,y,a);
-	a=x; b=y;
-	while(a!=b )
+	printf("LCM of %d and %d is %d\n", x, y, a);
+	a = x;
+	b = y;
+	while (a != b)
 	{
-		if(a>b)
-			a=a-b;
+		if (a > b)
+			a = a - b;
 		else
-			b=b-a;
+			b = b - a;
 	}
-	printf("HCF of %d and %d is %d\n",x,y,a);
+	printf("HCF of %d and %d is %d\n", x, y, a);
 	return 0;
 }

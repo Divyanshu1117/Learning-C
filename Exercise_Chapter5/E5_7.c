@@ -1,15 +1,14 @@
 /*E5_7*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int a=0,b=0;
-	if(!a)
+	int a = 0, b = 0;
+	if (!a)
 	{
 		b = !a;
-		if(b)
+		if (b)
 			a = !b;
 	}
-	printf("%d, %d\n",a,b);
+	printf("%d, %d\n", a, b);
 	return 0;
 }
-

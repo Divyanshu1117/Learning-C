@@ -1,8 +1,8 @@
 /*P12.30*/
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-int display(char line[],char wordtext[]);
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int display(char line[], char wordtext[]);
 int is_end(int ch);
 int main(void)
 {
@@ -10,52 +10,58 @@ int main(void)
 	int total = 0;
 	FILE *fptr;
 
-	if((fptr=fopen("test.txt","r")) == NULL)
+	if ((fptr = fopen("test.txt", "r")) == NULL)
 	{
 		printf("File doesn't exist\n");
 		exit(1);
 	}
-	while((fgets(line,81,fptr))!=NULL)
-		total = total + display( line, "that" );
-	printf("Number of times the given word occurs in file is %d\n",total); 
+	while ((fgets(line, 81, fptr)) != NULL)
+		total = total + display(line, "that");
+	printf("Number of times the given word occurs in file is %d\n", total);
 	fclose(fptr);
 	return 0;
 }
-int display(char line[],char wordtext[])
+int display(char line[], char wordtext[])
 {
-	int i,j,k,len;
+	int i, j, k, len;
 	char str[80];
 	int count = 0;
 	len = strlen(wordtext);
-	for(i=0; line[i]!='\0'; i++)
+	for (i = 0; line[i] != '\0'; i++)
 	{
 		k = 0;
-		if(is_end(line[i-1]) && is_end(line[i+len]) )
+		if (is_end(line[i - 1]) && is_end(line[i + len]))
 		{
-			for(k=0,j=i; k<len; j++,k++)
+			for (k = 0, j = i; k < len; j++, k++)
 				str[k] = line[j];
 			str[k] = '\0';
-			if(strcmp(str,wordtext) == 0)
+			if (strcmp(str, wordtext) == 0)
 				count++;
 		}
 	}
-	if(count>0)
+	if (count > 0)
 	{
-		printf("%s",line);
-		printf("count = %d\n",count);
+		printf("%s", line);
+		printf("count = %d\n", count);
 	}
 	return count;
 }
 int is_end(int ch)
 {
-	switch(ch)
+	switch (ch)
 	{
-		case '\n':  case '\t':  case ' ':  case ', ':  case '.':  case ':':  case ';':  case '-' :
-			return 1;
+	case '\n':
+	case '\t':
+	case ' ':
+	case ', ':
+	case '.':
+	case ':':
+	case ';':
+	case '-':
+		return 1;
 	}
 	return 0;
 }
-
 
 /*P12.30*/
 /*
@@ -76,7 +82,7 @@ main()
 	}
 	while((fgets(line,81,fptr))!=NULL)
 		total = total + display( line, "that" );
-	printf("Number of times the given word occurs in file is %d\n",total); 
+	printf("Number of times the given word occurs in file is %d\n",total);
 	fclose(fptr);
 }
 int display(char line[],char wordtext[])
@@ -115,10 +121,9 @@ int is_end(int ch)
 }
 strcmp_in(char *str1, char *str2)
 {
-	int i; 
+	int i;
 	for(i=0; str1[i]!='\0'; i++)
 	if(toupper(str1[i]) != toupper(str2[i]))
 		return 1;
 	return 0;
-}
-*/
+}*/

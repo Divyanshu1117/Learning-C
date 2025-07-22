@@ -1,15 +1,16 @@
 /*P9.27 Pointer arithmetic in void pointers*/
-#include<stdio.h>
+#include <stdio.h>
+
 int main(void)
 {
 	int i;
-	float a[4] = {1.2,2.5,3.6,4.6};
+	float a[4] = {1.2, 2.5, 3.6, 4.6};
 	void *vp;
-	vp=a;
-	for(i=0; i<4; i++)	
+	vp = a;
+	for (i = 0; i < 4; i++)
 	{
 		printf("%.1f\t", *(float *)vp);
-		(float *)vp=(float *)vp+1;	  /*Can’t write vp=vp+1*/
+		vp = (float *)vp + 1; // Increment pointer as float*
 	}
 	printf("\n");
 	return 0;

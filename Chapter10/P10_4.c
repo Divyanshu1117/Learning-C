@@ -1,5 +1,5 @@
 /*P10.4 Input and output strings using gets() and puts()*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
 	char name[20];

@@ -1,26 +1,26 @@
 /*E5_44*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int i,x,sum;
+	int i, x, sum;
 
-	for(i=1; i<6; i++)
+	for (i = 1; i < 6; i++)
 	{
-		if(i==3)
+		if (i == 3)
 			continue;
-		printf("%d ",i);
+		printf("%d ", i);
 	}
 	printf("\n");
 
-	x=0,sum=0;
-	while(x<10)
+	x = 0, sum = 0;
+	while (x < 10)
 	{
 		x++;
-		if(x%2==0)
+		if (x % 2 == 0)
 			continue;
-		sum+=x;
+		sum += x;
 	}
-	printf("%d ",sum);
+	printf("%d ", sum);
 	printf("\n");
 	return 0;
 }
@@ -33,7 +33,7 @@ int main(void)
 	for(i=1; i<6; i++)
 	{
 		if(i!=3)
-			printf("%d ",i);	
+			printf("%d ",i);
 	}
 	printf("\n");
 
@@ -46,5 +46,4 @@ int main(void)
 	}
 	printf("%d ",sum);
 	return 0;
-}
-*/
+}*/
