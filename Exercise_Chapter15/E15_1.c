@@ -1,10 +1,17 @@
 /*E15.1*/
-#include<stdio.h>
-enum month { jan, feb, mar, apr, may };
+#include <stdio.h>
+enum month
+{
+    jan,
+    feb,
+    mar,
+    apr,
+    may
+};
 int main(void)
 {
     enum month m;
-    m = feb + 1;  // Correct way
+    m = feb + 1; // Correct way
     printf("%d\n", m);
     return 0;
 }

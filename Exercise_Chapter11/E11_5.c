@@ -1,13 +1,22 @@
 /*E11_5*/
-#include<stdio.h>
-void func(struct {int i; char c;} v);
-int main(void)
-{ 
-	struct {int i; char c;}var = {2,'s'};
-	func(var);
-	return 0;
-}
-void func(struct {int i; char c;} v)
+#include <stdio.h>
+
+struct tag
 {
-	printf("%d   %c\n",v.i,v.c);
+    int i;
+    char c;
+};
+
+void func(struct tag v);
+
+int main(void)
+{
+    struct tag var = {2, 's'};
+    func(var);
+    return 0;
+}
+
+void func(struct tag v)
+{
+    printf("%d   %c\n", v.i, v.c);
 }

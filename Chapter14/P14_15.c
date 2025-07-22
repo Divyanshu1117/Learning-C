@@ -1,25 +1,25 @@
-/*P14.15 Program to print the two’s complement of a number*/
-#include<stdio.h>
+/*P14.15 Program to print the twoï¿½s complement of a number*/
+#include <stdio.h>
 void displayBits(int x);
 int main(void)
 {
-	int num,i,mask;
+	int num, i, mask;
 	printf("Enter a number : ");
-	scanf("%d",&num);
+	scanf("%d", &num);
 	displayBits(num);
 	printf("Two's complement is : \n");
-	displayBits(~num+1);
+	displayBits(~num + 1);
 
-	for(i=0; i<=31; i++)    
+	for (i = 0; i <= 31; i++)
 	{
-		mask=1<<i;
-		if((num & mask)!=0)	  /*Find a bit with value 1*/
+		mask = 1 << i;
+		if ((num & mask) != 0) /*Find a bit with value 1*/
 			break;
 	}
-	for(i=i+1; i<=31; i++)
+	for (i = i + 1; i <= 31; i++)
 	{
-		mask = 1<<i;
-		num = num ^ mask;	/*Invert the bit*/
+		mask = 1 << i;
+		num = num ^ mask; /*Invert the bit*/
 	}
 	printf("Two's complement is : \n");
 	displayBits(num);
@@ -27,12 +27,12 @@ int main(void)
 }
 void displayBits(int x)
 {
-	int i,mask;
-	for(i=31; i>=0; i--)
+	int i, mask;
+	for (i = 31; i >= 0; i--)
 	{
-		mask = 1<<i;
-		putchar((x & mask)?'1':'0'); /* Test and print ith bit*/		
-		if(i%8==0)
+		mask = 1 << i;
+		putchar((x & mask) ? '1' : '0'); /* Test and print ith bit*/
+		if (i % 8 == 0)
 			putchar(' '); /*Space after 8 bits*/
 	}
 	printf("\n");

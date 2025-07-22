@@ -1,18 +1,18 @@
 /*E7_25 Binomial coefficient*/
-#include<stdio.h>
+#include <stdio.h>
 int BC(int n, int k);
 
 int main(void)
-{ 
-	int n,k;
+{
+	int n, k;
 	printf("Enter n and k : ");
-	scanf("%d%d",&n,&k);
-	printf("%d\n",BC(n,k));
+	scanf("%d%d", &n, &k);
+	printf("%d\n", BC(n, k));
 	return 0;
 }
-int BC(int n,int k)
+int BC(int n, int k)
 {
-	if(k==0 || k==n)
+	if (k == 0 || k == n)
 		return 1;
-	return BC(n-1,k-1) + BC(n-1,k);
+	return BC(n - 1, k - 1) + BC(n - 1, k);
 }

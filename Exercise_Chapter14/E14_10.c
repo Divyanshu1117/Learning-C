@@ -1,5 +1,5 @@
 /*E14.10*/
-#include<stdio.h>
+#include <stdio.h>
 void func(int x);
 int main(void)
 {
@@ -7,13 +7,13 @@ int main(void)
 }
 void func(int x)
 {
-	int i,mask;
-	mask=1<<31;
-	for(i=1; i<=32; i++)
+	int i, mask;
+	mask = 1 << 31;
+	for (i = 1; i <= 32; i++)
 	{
-		putchar((x&mask)?'1':'0'); 
-		x<<=1;
-		if(i%8==0)
+		putchar((x & mask) ? '1' : '0');
+		x <<= 1;
+		if (i % 8 == 0)
 			putchar(' ');
 	}
 	printf("\n");

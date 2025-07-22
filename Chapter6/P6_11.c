@@ -1,12 +1,12 @@
 /*P6.11 Program that uses a function with no arguments and no return values*/
-#include<stdio.h>
+#include <stdio.h>
 void displaymenu(void);
 int main(void)
 {
 	int choice;
 	displaymenu();
 	printf("Enter your choice : ");
-	scanf("%d",&choice);
+	scanf("%d", &choice);
 	return 0;
 }
 void displaymenu(void)

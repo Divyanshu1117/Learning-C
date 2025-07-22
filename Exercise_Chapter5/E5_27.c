@@ -1,12 +1,12 @@
 /*E5_27*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int i=10;
+	int i = 10;
 	do
 	{
-		printf("i=%d\t",i);
-		i=i-3;
-	}while(i);
+		printf("i=%d\t", i);
+		i = i - 3;
+	} while (i);
 	return 0;
 }

@@ -1,15 +1,19 @@
 /*E6.26*/
-#include<stdio.h>
-void func(int a,static int b);
+#include <stdio.h>
+
+void func(int a);
+
 int main(void)
 {
-	func(1,2);
-	func(3,4);
-	return 0;
+    func(1);
+    func(3);
+    return 0;
 }
-void func(int a,static int b)
+
+void func(int a)
 {
-	a++;
-	b++;
-	printf("%d %d\n",a,b);
+    static int b = 2;  // static variable, initialized only once
+    a++;
+    b++;
+    printf("%d %d\n", a, b);
 }

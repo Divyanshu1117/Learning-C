@@ -1,5 +1,5 @@
 /*E7_14 Enter a line of text and Reverse it*/
-#include<stdio.h>
+#include <stdio.h>
 void func(void);
 int main(void)
 {
@@ -7,11 +7,11 @@ int main(void)
 	func();
 	printf("\n");
 	return 0;
-}/*End of main()*/
+} /*End of main()*/
 void func(void)
 {
 	char c;
-	if((c=getchar())!='\n')
+	if ((c = getchar()) != '\n')
 		func();
 	putchar(c);
 }

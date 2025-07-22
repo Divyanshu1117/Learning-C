@@ -1,25 +1,25 @@
 /*E5_37*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int i,sum,n;
+	int i, sum, n;
 
-	i=1;
-	for( ; ; )
+	i = 1;
+	for (;;)
 	{
-		if(i==5)
+		if (i == 5)
 			break;
-		printf("%d\n",i);
+		printf("%d\n", i);
 		i++;
 	}
 
-	sum=0;
-	for( ; ; )
+	sum = 0;
+	for (;;)
 	{
-		if(sum>100)
+		if (sum > 100)
 			break;
-		scanf("%d",&n);
-		sum+=n;
+		scanf("%d", &n);
+		sum += n;
 	}
 	return 0;
 }
@@ -34,5 +34,4 @@ int main(void)
 	for(sum=0; sum<=100; sum+=n)
 		scanf("%d",&n);
 	return 0;
-}
-*/
+}*/

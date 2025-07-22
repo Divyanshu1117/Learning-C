@@ -1,22 +1,22 @@
 /*P7.9 Program to generate fibonacci series*/
-#include<stdio.h>
-int fib(int n);		
-int TailRecursiveFib(int n);		
+#include <stdio.h>
+int fib(int n);
+int TailRecursiveFib(int n);
 int TRfib(int n, int next, int result);
-void Ifib(int n);		
+void Ifib(int n);
 
 int main(void)
 {
 	int nterms, i;
 	printf("Enter number of terms : ");
-	scanf("%d",&nterms);
-	
-	for(i=0; i<nterms; i++)
-		printf("%d  ",fib(i));
+	scanf("%d", &nterms);
+
+	for (i = 0; i < nterms; i++)
+		printf("%d  ", fib(i));
 	printf("\n");
-	
-	for(i=0; i<nterms; i++)
-		printf("%d  ",TailRecursiveFib(i));
+
+	for (i = 0; i < nterms; i++)
+		printf("%d  ", TailRecursiveFib(i));
 	printf("\n");
 
 	Ifib(nterms);
@@ -25,33 +25,33 @@ int main(void)
 }
 
 /*Recursive*/
-int fib(int n)		
+int fib(int n)
 {
-	if(n==0 || n==1)
-		return(1);
-	return(fib(n-1) + fib(n-2));
+	if (n == 0 || n == 1)
+		return (1);
+	return (fib(n - 1) + fib(n - 2));
 }
 
-int TailRecursiveFib(int n)		
+int TailRecursiveFib(int n)
 {
-	return TRfib(n,1,1);
+	return TRfib(n, 1, 1);
 }
 
-int TRfib(int n, int next, int result)	
+int TRfib(int n, int next, int result)
 {
-	if(n==0)
-		return(result);
-	return TRfib(n-1, next+result, next);
+	if (n == 0)
+		return (result);
+	return TRfib(n - 1, next + result, next);
 }
 
 /*Iterative*/
-void Ifib(int n)		
+void Ifib(int n)
 {
-	int i,x=0,y=1,z;
+	int i, x = 0, y = 1, z;
 	printf("%d  ", y);
-	for(i=1; i<n; i++)
+	for (i = 1; i < n; i++)
 	{
-		z=x+y;
+		z = x + y;
 		printf("%d  ", z);
 		x = y;
 		y = z;

@@ -1,9 +1,11 @@
 /*E11_10*/
-#include<stdio.h>
+#include <stdio.h>
+
+typedef unsigned short int us_int;
+
 int main(void)
 {
-	typedef short int s_int;
-	unsigned s_int var=3;
-	printf("%u", var);
-	return 0;
+    us_int var = 3;
+    printf("%u", var);
+    return 0;
 }

@@ -1,17 +1,17 @@
 /*E10.24*/
-#include<stdio.h>
+#include <stdio.h>
 void func(char *p);
 int main(void)
 {
-	char *str="doubtful";
+	char *str = "doubtful";
 	func(str);
 	return 0;
 }
 void func(char *p)
 {
-	if(*p!='f')
+	if (*p != 'f')
 	{
-		printf("%c",*p);
+		printf("%c", *p);
 		func(++p);
 	}
 }

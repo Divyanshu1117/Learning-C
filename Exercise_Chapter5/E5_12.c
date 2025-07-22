@@ -1,14 +1,14 @@
 /*E5_12*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	char grade='A';
+	char grade = 'A';
 	int marks = 94;
-	if(grade == 'A')
-		if(marks > 95)
+	if (grade == 'A')
+		if (marks > 95)
 			printf("Excellent\n");
-	else
-		printf("Work hard for getting A grade\n");
+		else
+			printf("Work hard for getting A grade\n");
 	return 0;
 }
 
@@ -26,5 +26,4 @@ int main(void)
 	else
 		printf("Work hard for getting A grade\n");
 	return 0;
-}
-*/
+}*/

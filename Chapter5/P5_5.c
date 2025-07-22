@@ -1,24 +1,24 @@
 /*P5.5 Program to find biggest number from three given numbers*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int a,b,c,big;
+	int a, b, c, big;
 	printf("Enter three numbers : ");
 	scanf("%d%d%d", &a, &b, &c);
-	if(a>b)
+	if (a > b)
 	{
-		if(a>c)
-			big=a;
+		if (a > c)
+			big = a;
 		else
-			big=c;
+			big = c;
 	}
 	else
 	{
-		if(b>c)
-			big=b;
+		if (b > c)
+			big = b;
 		else
-			big=c;
+			big = c;
 	}
-	printf("Biggest number is %d\n",big);
+	printf("Biggest number is %d\n", big);
 	return 0;
-}/*End of main()*/
+} /*End of main()*/

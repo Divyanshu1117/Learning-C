@@ -1,12 +1,12 @@
 /*E5_48*/
-#include<stdio.h>
+#include <stdio.h>
 int main(void)
 {
-	int i,j,n;
-	for(i=1; i<=10; i++)
+	int i, j, n;
+	for (i = 1; i <= 10; i++)
 	{
-		scanf("%d",&n);
-		for(j=1; j<=n; j++)
+		scanf("%d", &n);
+		for (j = 1; j <= n; j++)
 			printf("=");
 		printf("\n");
 	}

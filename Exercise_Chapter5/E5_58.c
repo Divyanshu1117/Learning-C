@@ -1,21 +1,22 @@
-/*E5_58*/ 
-#include<stdio.h>
+/*E5_58*/
+#include <stdio.h>
 int main(void)
 {
-	long x,y,z,num;
+	long x, y, z, num;
 	printf("Enter a number : ");
-	scanf("%d",&num);
-	x=0; y=1;
+	scanf("%d", &num);
+	x = 0;
+	y = 1;
 	do
 	{
-		z = x+y;
+		z = x + y;
 		x = y;
 		y = z;
-	}while(z<num);
-	
-	if(z==num)
-		printf("%d is a Fibonacci number\n",num);
+	} while (z < num);
+
+	if (z == num)
+		printf("%d is a Fibonacci number\n", num);
 	else
-		printf("%d is not a Fibonacci number\n",num);
+		printf("%d is not a Fibonacci number\n", num);
 	return 0;
 }

@@ -1,11 +1,9 @@
 /*E13_8*/
-#include<stdio.h>
-#define . ;
+#include <stdio.h>
+
 int main(void)
 {
-	printf("If the lift to success is broken, ").
-	printf("Try the stairs.").
-	return 0;
+    printf("If the lift to success is broken, ");
+    printf("Try the stairs.");
+    return 0;
 }
-
-	

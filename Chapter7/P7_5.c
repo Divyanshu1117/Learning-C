@@ -1,30 +1,30 @@
 /*P7.5 Program to convert a positive decimal number to Binary, Octal or Hexadecimal */
-#include<stdio.h>
+#include <stdio.h>
 void convert(int, int);
 int main(void)
 {
 	int num;
 	printf("Enter a positive decimal number : ");
-	scanf("%d",&num);
-	convert(num,2);
+	scanf("%d", &num);
+	convert(num, 2);
 	printf("\n");
-	convert(num,8);
+	convert(num, 8);
 	printf("\n");
-	convert(num,16);
+	convert(num, 16);
 	printf("\n");
 	return 0;
-}/*End of main()*/
+} /*End of main()*/
 
-void convert(int num,int base)
+void convert(int num, int base)
 {
-	int rem=num%base;
-	
-	if(num==0)
+	int rem = num % base;
+
+	if (num == 0)
 		return;
-	convert(num/base,base);
-	
-	if(rem<10)
-		printf("%d",rem);	
+	convert(num / base, base);
+
+	if (rem < 10)
+		printf("%d", rem);
 	else
-		printf("%c",rem-10+'A');
-}/*End of convert()*/
+		printf("%c", rem - 10 + 'A');
+} /*End of convert()*/
