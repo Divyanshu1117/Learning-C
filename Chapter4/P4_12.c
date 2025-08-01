@@ -1,4 +1,5 @@
 /*P4.12 Program to evaluate some expressions*/
+#include <stdio.h>
 int main(void)
 {
 	int a, b, c, d, e, f, g, h, k;

@@ -1,4 +1,4 @@
-/*P6.25 Pascal�s triangle*/
+/*P6.25 Pascal's triangle*/
 #include <stdio.h>
 long factorial(int);
 long comb(int, int);
